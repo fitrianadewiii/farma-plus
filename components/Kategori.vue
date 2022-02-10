@@ -1,7 +1,6 @@
 <template>
   <section>
-    <nuxt-link to="/detail">
-      <div class="card m-2">
+      <div class="card m-2" @click="detail()" style="cursor:pointer">
         <div class="row">
           <div class="col-md-3">
             <img class="m-3" src="../assets/image/medicine.png" width="30px" height="30px">
@@ -11,6 +10,17 @@
           </div>
         </div>
       </div>
-    </nuxt-link>
   </section>
 </template>
+<script>
+export default {
+  
+  methods: {
+    detail() {
+        this.$router.push({
+          path: `/detail`,
+        })
+      },
+  },
+}
+</script>

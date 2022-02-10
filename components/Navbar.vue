@@ -86,18 +86,7 @@
 
             <!-- Right aligned nav items -->
             <b-navbar-nav class="ml-auto">
-
-
-
-
-              <b-nav-item-dropdown right>
-                <!-- Using 'button-content' slot -->
-                <template #button-content>
-                  <em>User</em>
-                </template>
-                <b-dropdown-item href="#">Profile</b-dropdown-item>
-                <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-              </b-nav-item-dropdown>
+             <b-nav-item href="#"> <img class="ml-auto mr-2" src="../assets/image/drugstore.png" width="25px" height="25px">Apotek</b-nav-item>
             </b-navbar-nav>
           </b-collapse>
         </div>

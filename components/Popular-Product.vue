@@ -1,7 +1,7 @@
 <template>
   <section>
-    <nuxt-link to="/detail-produk">
-    <div class="card mt-2 mb-2">
+    
+    <div class="card mt-2 mb-2" @click="detail()">
       <div class="card-body">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -35,6 +35,16 @@
         </div>
       </div>
     </div>
-    </nuxt-link>
   </section>
 </template>
+<script>
+export default {
+  methods: {
+    detail() {
+        this.$router.push({
+          path: `/detail-produk`,
+        })
+      },
+  },
+}
+</script>

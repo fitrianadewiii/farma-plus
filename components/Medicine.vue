@@ -1,6 +1,7 @@
 <template>
   <section>
-    <div class="card mt-2 mb-2">
+    
+    <div  class="card mt-2 mb-2" @click="detailproduk()" style="cursor:pointer">
       <div class="card-body">        
         <div class="row">
           <div class="col-md-6 d-flex align-items-center ">
@@ -41,8 +42,22 @@
         </div>
       </div>
     </div>
+    
   </section>
 </template>
+<script>
+export default {
+
+  methods: {
+    detailproduk() {
+        this.$router.push({
+          path: `/detail-produk`,
+        })
+      },
+  },
+   
+}
+</script>
 <style>
     .receipt{
         background-color:rgba(209, 55, 55, 0.24);
